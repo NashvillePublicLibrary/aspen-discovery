@@ -21,7 +21,7 @@
 				{translate text="If a date is not selected, the hold will be frozen until you thaw it." isPublicFacing=true}
 			</p>
 		{/if}
-		{if !empty($maxFreezeTimestamp)}
+		{if !empty($reactivateDateNotRequired) && !empty($maxFreezeTimestamp)}
 			<p class="alert alert-info">
 				{translate text="If a date is not selected, the hold will be frozen until {$maxFreezeTimestamp|date_format:"%Y-%m-%d"}." isPublicFacing=true}
 			</p>
